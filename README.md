@@ -1,29 +1,33 @@
 # Olympic Medal Predictor
 
-Predicts Olympic medal counts using linear regression. My first ML project to learn the basics.
+A machine learning project that predicts Olympic medal counts using linear regression. Built as my first ML project to learn the fundamentals of data science and predictive modeling. Gotta start somewhere
 
-## How it works
+## What It Does
 
-Uses two main factors:
-- Number of athletes a country sends
-- Their previous Olympic performance
+Predicts how many medals a country will win at the Olympics by analyzing team data like number of athletes, average age, and historical performance.
 
-Trained on pre-2012 data, tested on 2012-2016 Olympics.
+## The Process
 
-## Results
+1. **Data Exploration** - Analyzed correlations between features and medal counts
+2. **Data Cleaning** - Removed missing values and filtered relevant columns  
+3. **Train/Test Split** - Used pre-2012 data for training, 2012+ for testing
+4. **Model Training** - Applied linear regression using scikit-learn
+5. **Evaluation** - Calculated mean absolute error and analyzed results by country
 
-- Previous medals are the strongest predictor (92% correlation)
-- Average error: ~3.3 medals
-- Works better for countries that typically win more medals
+## Key Insights
 
-## Built with
+- Previous medal count is the strongest predictor (92% correlation)
+- Model performs better for countries with higher medal counts
+- Average prediction error: ~3.3 medals
+
+## Tech
 
 Python, pandas, scikit-learn, seaborn
 
 ## Files
 
-- `olympic_medal_predictions.ipynb` - Main analysis
-- `teams.csv` - Data
+- `olympic_medal_predictions.ipynb` - Main analysis and model
+- `teams.csv` - Olympic team data
 - `README.md` - This file
 
-Basic linear regression to understand the ML workflow from data exploration to model evaluation.
+Built following a learning-focused approach to understand ML fundamentals.
